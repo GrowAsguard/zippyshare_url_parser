@@ -29,6 +29,11 @@ You need the following packages installed:-
 
 	pip install requests
 	pip install bs4
+	
+Other needed packages which are already installed with Python 3 are:-
+
+	sys
+	tKinter
   
 **Usage:-**
 
