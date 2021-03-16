@@ -44,6 +44,10 @@ Other needed packages which are already installed with Python 3 are:-
 5) The script will now run. Parsed links will be saved to the txt file and will also be displayed in the terminal.
 6) Finish.
 
+**Tutorial:-**
+
+https://vimeo.com/524144002
+
 **Current known and unfixed issues:-**
 
 - The direct download links stop working after a few hours ( About 3-4 hrs, maybe). Don't know the exact time period. At that point, you can rerun the script to get new download links to the same files which will work without problem.
