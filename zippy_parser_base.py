@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://www40.zippyshare.com/v/FJjX9P5J/file.html"
+url = "https://www9.zippyshare.com/v/m90twnE2/file.html"
 #the url is the zippyshare url
 
 url_content = requests.get(url).content
@@ -14,40 +14,30 @@ for i in x:
     xx.append(str(i))
 
 for j in xx:
-    if '51245' in j:
+    if 'var a' and 'var b' in j:
         thing = j
         break
     else:
         pass
 
-thing_stripped = thing.strip()
+line_list = []
 
-ylist = thing_stripped.split('/')
+for l in j.splitlines():
+    line_list.append(l)
+
+a = eval(line_list[1].strip('varb= ;'))
+b = eval(line_list[2].strip('varb= ;'))
 
 url_initial = url.split('/')[2]
 
-file_id = ylist[3]
+file_code = url.split('/')[4]
 
-unique_code = ylist[4].strip(" '\" ()+")
-unique_code0 = eval(unique_code)
+unique_code = (a//3) + (a%b)
 
-game_name = ylist[-2].strip('";\n}< ')
+file_name0 = line_list[-3]
+file_name1 = file_name0.split('/')[-1]
+file_name2 = file_name1.strip('";')
 
-parsed_link = f'{url_initial}/d/{file_id}/{unique_code0}/{game_name}'
-parsed_link2 = f'{url_initial}/d/{file_id}/{unique_code0}/script>'
-# you can also use "script>" (without the quotes) instead of game name, it will download just as fine
+final_url = f'https://{url_initial}/d/{file_code}/{unique_code}/{file_name2}'
 
-print(ylist)
-
-print()
-
-print(url_initial)
-print(file_id)
-print(unique_code)
-print(unique_code0)
-print(game_name)
-
-print()
-
-print(parsed_link)
-print(parsed_link2)
+print(final_url)
