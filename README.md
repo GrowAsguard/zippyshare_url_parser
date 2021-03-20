@@ -13,7 +13,6 @@ Can output results in a text file as well as in the terminal.
 **Note:-**
 
 ZippyShare sometimes updates the webpage source code, which may/will break this script. If this happens, simply raise an issue and I will try my best to update the script. 
-Current script working as of 15th March 2021.
 
 Script made and tested on Windows 10 Pro. May work for all versions of Windows. May not work for Linux.
 
@@ -49,3 +48,12 @@ Other needed packages which are already installed with Python 3 are:-
 - The direct download links stop working after a few hours ( About 3-4 hrs, maybe). Don't know the exact time period. At that point, you can rerun the script to get new download links to the same files which will work without problem.
 - The script will run into errors when the file is removed from ZippyShare servers (a.k.a. File Not Found).
 
+**Chaneglog:-**
+
+*v1.1*
+adjusted to new webpage code
+20th March 2021
+
+*v1.0* 
+Created the script
+14th March 2021
