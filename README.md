@@ -1,5 +1,7 @@
 # zippyshare_url_parser
 
+**NOTE:- As of now, only v1.0 is working. If it fails to run, then try v1.1 .If both of them fail, raise an issue.**
+
 **Description:-**
 
 Parses ZippyShare URLs to get direct links. Written in Python.
